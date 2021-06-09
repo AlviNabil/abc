@@ -131,8 +131,12 @@
                           </tr>  
                           <?php  
                                }  
-                          }  
-                          ?>  
+                          }
+                          else{
+                          ?>
+                          <td><?php echo "No Patient Yet"?> </td>    
+                          <?php } ?> 
+                            
                      </table>  
 
 
