@@ -8,7 +8,7 @@
         echo "Country:".$result->country.'<br/>';
         echo "Region:".$result->regionName.'<br/>';
         echo "City:".$result->city.'<br/>';
-        if(isset($result->lat) && isset($result->lon)) {
+        if(isset($result->lat) && isset($result->lon)){
             echo "Lat:". $result->lat.'<br/>';
             echo "Lon:".$result->lon.'<br/>';
             echo "IP:". $result->query.'<br/>';
