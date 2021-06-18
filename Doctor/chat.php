@@ -12,6 +12,8 @@
 ?>
 
 <body>
+<?php include_once "head.php" ?>
+    <div class="mid">
     <div class="wrapper">
         <section class="chat-area">
             <header>
@@ -42,8 +44,11 @@
             </form>
         </section>
     </div>
+    </div>
+    <?php include_once "footer.php" ?>
+    <script src="JavaScript/chat.js"></script>
+
 </body>
-<script src="JavaScript/chat.js"></script>
 
 
 </html>

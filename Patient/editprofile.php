@@ -1,9 +1,10 @@
 <?php
 session_start();
-if (isset($_SESSION['unique_id'])) {
-    header("location: user.php");
+if (!isset($_SESSION['unique_id'])) {
+    header("location: login.php");
 }
 ?>
+
 <?php
 include_once "header.php"
 ?>
@@ -16,7 +17,14 @@ include_once "header.php"
     <div class="mid">
         <div class="wrapper">
             <section class="form signup">
-                <header>Signup as Patient</header>
+            <?php
+                    include_once "PHP/config.php";
+                    $sql = mysqli_query($conn, "SELECT * FROM patient WHERE unique_id = {$_SESSION['unique_id']} ");
+                    if (mysqli_num_rows($sql) > 0) {
+                        $row = mysqli_fetch_assoc($sql);
+                    }
+                    ?>
+                <header>Edit Profile</header>
                 <form action="#" enctype="multipart/form-data" method="POST">
                     <div class="error-txt">This is an error message!</div>
                     <div class="name-details">
@@ -24,32 +32,26 @@ include_once "header.php"
 
                         <div class="field input">
                             <label>First Name</label>
-                            <input type="text" name="fname" placeholder="First Name" required>
+                            <input type="text" name="fname" value="<?php echo $row['fname']?>" required>
                         </div>
 
 
                         <div class="field input">
                             <label>Last Name</label>
-                            <input type="text" name="lname" placeholder="Last Name" required>
+                            <input type="text" name="lname" value="<?php echo $row['lname']?>"" required>
                         </div>
                     </div>
 
                     <div class="field input">
                         <label>Email Adress</label>
-                        <input type="text" name="email" placeholder="Enter Your Email" required>
+                        <input type="text" name="email" value="<?php echo $row['email']?>" required>
                     </div>
 
 
                     <div class="field input">
                         <label>Password</label>
-                        <input type="password" name="password" placeholder="Enter new Password" required>
+                        <input type="password" name="password" value="<?php echo $row['password']?>" required>
                         <i class="fas fa-eye"></i>
-                    </div>
-
-
-                    <div class="field image">
-                        <label>Select Image</label>
-                        <input type="file" name="image" required>
                     </div>
 
                     <div class="field button">
@@ -76,7 +78,7 @@ include_once "header.php"
     </div>
     <?php include "footer.php" ?>
     <script src="JavaScript/pass_showHide.js"></script>
-    <script src="JavaScript/signup.js"></script>
+    <script src="JavaScript/update.js"></script>
 </body>
 
 

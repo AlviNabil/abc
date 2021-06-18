@@ -8,11 +8,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+.mid{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 70vh;
     background: #f7f7f7;
 }
 
@@ -212,6 +212,7 @@ form .name-details .field:last-child{
 .users .search input{
     position: absolute;
     height: 42px;
+    width: 340px;
     width: calc(100%-50px);
     border: 1px solid #ccc;
     padding: 0 13px;

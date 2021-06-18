@@ -9,6 +9,8 @@
 ?>
 
 <body>
+<?php include_once "head.php" ?>
+    <div class="mid">
     <div class="wrapper">
         <section class="form login">
             <header>Login as Doctor</header>
@@ -42,6 +44,8 @@
     </div>
     <script src="JavaScript/pass_showHide.js"></script>
     <script src="JavaScript/login.js"></script>
+    </div>
+    <?php include_once "footer.php" ?>
 </body>
 
 

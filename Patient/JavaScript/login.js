@@ -16,7 +16,7 @@ continueBtn.onclick = ()=>{
                 let data = xhr.response;
                 console.log(data);
                 if(data == "success"){
-                    location.href = "user.php";
+                    location.href = "firstPage.php";
                     
                 }
                 else{

@@ -10,6 +10,8 @@
 
 
 <body>
+<?php include_once "head.php" ?>
+    <div class="mid">
     <div class="wrapper">
         <section class="form signup">
             <header>Signup as Doctor</header>
@@ -34,7 +36,18 @@
                     <label>Email Adress</label>
                     <input type="text" name="email" placeholder="Enter Your Email" required>
                 </div>
-
+                <div class="field input">
+                    <label>Adress</label>
+                    <input type="text" name="address" placeholder="Enter Your Address" required>
+                </div>
+                <div class="field input">
+                    <label>Phone Number</label>
+                    <input type="text" name="phonenumber" placeholder="Enter Your Phonenumber" required>
+                </div>
+                <div class="field input">
+                    <label>Specialization</label>
+                    <input type="text" name="specialization" placeholder="Enter Your Specialization" required>
+                </div>
 
                 <div class="field input">
                     <label>Password</label>
@@ -71,6 +84,8 @@
     </div>
     <script src="JavaScript/pass_showHide.js"></script>
     <script src="JavaScript/signup.js"></script>
+    </div>
+    <?php include_once "footer.php" ?>
 </body>
 
 
