@@ -48,6 +48,10 @@
                     <label>Specialization</label>
                     <input type="text" name="specialization" placeholder="Enter Your Specialization" required>
                 </div>
+                <div class="field input">
+                    <label>Age</label>
+                    <input type="text" name="age" placeholder="Enter Your Age" required>
+                </div>
 
                 <div class="field input">
                     <label>Password</label>

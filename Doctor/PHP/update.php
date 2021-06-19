@@ -20,10 +20,10 @@ $address = mysqli_real_escape_string($conn, $_POST['address']);
 if (!empty($fname) && !empty($lname) && !empty($email) && !empty($password) && !empty($phonenumber) && !empty($age) && !empty($address)) {
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $sql = mysqli_query($conn, "SELECT email FROM patient WHERE email = '{$email}'");
+        $sql = mysqli_query($conn, "SELECT email FROM doctor WHERE email = '{$email}'");
 
         //all the users data insertion in the sql table
-        $sql2 = mysqli_query($conn, "UPDATE patient 
+        $sql2 = mysqli_query($conn, "UPDATE doctor 
                                                 SET fname = '{$fname}',
                                                     lname = '{$lname}',
                                                     email = '{$email}',
@@ -36,7 +36,7 @@ if (!empty($fname) && !empty($lname) && !empty($email) && !empty($password) && !
 
 
         if ($sql2) {
-            $sql3 = mysqli_query($conn, "SELECT * FROM patient WHERE email = '{$email}'");
+            $sql3 = mysqli_query($conn, "SELECT * FROM doctor WHERE email = '{$email}'");
             if (mysqli_num_rows($sql3) > 0) {
                 $row = mysqli_fetch_assoc($sql3);
                 $_SESSION['unique_id'] = $row['unique_id'];

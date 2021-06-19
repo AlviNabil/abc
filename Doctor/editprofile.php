@@ -19,7 +19,7 @@ include_once "header.php"
             <section class="form signup">
             <?php
                     include_once "PHP/config.php";
-                    $sql = mysqli_query($conn, "SELECT * FROM patient WHERE unique_id = {$_SESSION['unique_id']} ");
+                    $sql = mysqli_query($conn, "SELECT * FROM doctor WHERE unique_id = {$_SESSION['unique_id']} ");
                     if (mysqli_num_rows($sql) > 0) {
                         $row = mysqli_fetch_assoc($sql);
                     }
@@ -82,6 +82,7 @@ include_once "header.php"
 
 
                 </form>
+                
             </section>
         </div>
     </div>

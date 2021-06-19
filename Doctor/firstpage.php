@@ -18,7 +18,7 @@ include_once "header.php"
                 <header>
                     <?php
                     include_once "PHP/config.php";
-                    $sql = mysqli_query($conn, "SELECT * FROM patient WHERE unique_id = {$_SESSION['unique_id']} ");
+                    $sql = mysqli_query($conn, "SELECT * FROM doctor WHERE unique_id = {$_SESSION['unique_id']} ");
                     if (mysqli_num_rows($sql) > 0) {
                         $row = mysqli_fetch_assoc($sql);
                     }
@@ -34,13 +34,13 @@ include_once "header.php"
                 </header>
 
                 <div class="gap">
-                    <a href="doctorlist.php" class="logout">Doctor Lists</a>
+                    <a href="patientlist.php" class="logout">Patient List</a>
                 </div>
                 <div class="gap">
-                    <a href="user.php" class="logout">Chat with Doctor<br></a>
+                    <a href="user.php" class="logout">Chat with Patient<br></a>
                 </div>
                 <div class="gap">
-                    <a href="appointmentlist.php" class="logout">My Appointment List</a>
+                    <a href="appointmentlist.php" class="logout">Appointments</a>
                 </div>
 
             </section>

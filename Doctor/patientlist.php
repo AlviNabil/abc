@@ -17,7 +17,7 @@
             <header>
             <?php
                 include_once "PHP/config.php";
-                $sql = mysqli_query($conn, "SELECT * FROM patient WHERE unique_id = {$_SESSION['unique_id']} ");
+                $sql = mysqli_query($conn, "SELECT * FROM doctor WHERE unique_id = {$_SESSION['unique_id']} ");
                 if(mysqli_num_rows($sql)>0){
                     $row = mysqli_fetch_assoc($sql);
                 }
@@ -40,7 +40,7 @@
     </div>
     </div>
     <?php include "footer.php" ?>
-    <script src="JavaScript/doctorlist.js"></script>
+    <script src="JavaScript/patientlist.js"></script>
 </body>
 
 

@@ -3,7 +3,7 @@
               <div class="left box">
                 <h2>About us</h2>
                 <div class="content">
-                  <p>CodinNepal is a YouTube channel whet, </p>
+                  <p>This is a health care management system </p>
                   <div class="social">
                     <a href="#"><span class="fab fa-facebook-f"></span></a>
                     <a href="#"><span class="fab fa-twitter"></span></a>

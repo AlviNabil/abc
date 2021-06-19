@@ -5,6 +5,10 @@
     $fname = mysqli_real_escape_string($conn, $_POST['fname']);
     $lname = mysqli_real_escape_string($conn, $_POST['lname']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $address = mysqli_real_escape_string($conn,$_POST['address']);
+    $age = mysqli_real_escape_string($conn,$_POST['age']);
+    $gender = mysqli_real_escape_string($conn,$_POST['gender']);
+    $phonenumber = mysqli_real_escape_string($conn,$_POST['phonenumber']);
     $password = mysqli_real_escape_string($conn, $_POST['password']);
 
     
@@ -41,8 +45,8 @@
                             $random_id = rand(time(), 100000);
                            
                             //all the users data insertion in the sql table
-                            $sql2 = mysqli_query($conn, "INSERT INTO patient (unique_id, fname, lname, email, password, img, status)
-                                                        VALUES({$random_id},'{$fname}','{$lname}', '{$email}',  '{$password}', '{$new_img_name}', '{$status}' )");
+                            $sql2 = mysqli_query($conn, "INSERT INTO patient (unique_id, fname, lname, email, address, phonenumber, age, gender,  password, img, status)
+                                                        VALUES({$random_id},'{$fname}','{$lname}', '{$email}','{$address}', {$phonenumber},{$age} ,'{$gender}', '{$password}', '{$new_img_name}', '{$status}' )");
                             
                         }
                         else{

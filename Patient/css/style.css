@@ -57,6 +57,7 @@
 
 }
 
+
 form .name-details .field:first-child{
     margin-right: 10px;
 
@@ -92,7 +93,7 @@ form .name-details .field:last-child{
     height: 40px;
     width: 100%;
     font-size: 16px;
-    padding: 0 10px;
+    padding: 5px 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -241,6 +242,10 @@ form .name-details .field:last-child{
 }
 .users .gap{
     margin: 15px;
+}
+.users .gap a{
+    margin: 15px;
+    
 }
 .users .smaller{
     font-size: 13px;

@@ -8,12 +8,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 .mid{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 70vh;
-    background: #f7f7f7;
 }
 
 .wrapper{
@@ -32,7 +33,7 @@
     font-size: 25px;
     font-weight: 600;
     padding-bottom: 10px;
-    border-bottom: 1px solid #e6e66e;
+    border-bottom: 1px solid #363633;
 }
 
 .form form{
@@ -87,6 +88,22 @@ form .name-details .field:last-child{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+.form form .input span{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form form .input select{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
 .form form .image input {
     font-size: 17px;
@@ -104,6 +121,21 @@ form .name-details .field:last-child{
     border-radius: 5px;
     cursor: pointer;
 }
+.button a {
+    margin-right: 13px;
+    
+    height: 45px;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
 
 .form form .field i{
     position: absolute;
@@ -173,6 +205,11 @@ form .name-details .field:last-child{
     align-items: center;
 }
 
+.users header .back-icon{
+    font-size: 18px;
+    color:#333;
+    margin-right: 5px;
+}
 .users header .content img{
     height: 50px;
     width: 50px;
@@ -195,8 +232,24 @@ form .name-details .field:last-child{
     background: #333;
     border-radius: 5px;
 }
-
-
+.users .logout{
+    color: #fff;
+    font-size: 17px;
+    padding: 5px 12px;
+    background: #333;
+    border-radius: 5px;
+}
+.users .gap{
+    margin: 15px;
+}
+.users .gap a{
+    margin: 15px;
+    
+}
+.users .smaller{
+    font-size: 13px;
+    color:#721c24;
+}
 .users .search{
     margin: 20px 0;
     display: flex;
@@ -213,7 +266,6 @@ form .name-details .field:last-child{
     position: absolute;
     height: 42px;
     width: 340px;
-    width: calc(100%-50px);
     border: 1px solid #ccc;
     padding: 0 13px;
     font-size: 16px;
@@ -298,9 +350,18 @@ form .name-details .field:last-child{
 }
 
 
+.users .gap .smaller{
+    font-size: 13px;
+    color:#721c24;
+}
 
-
-
+.messageB{
+    color: #fff;
+    font-size: 17px;
+    padding: 5px 12px;
+    background: #333;
+    border-radius: 5px;
+}
 .chat-area header{
     display: flex;
     align-items: center;
@@ -343,6 +404,46 @@ form .name-details .field:last-child{
                 0 16px 16px -16px rgb(0 0 0 / 10%);
 }
 
+
+.profile header{
+    display: flex;
+    align-items: center;
+    padding: 18px 30px;
+}
+
+.profile header .back-icon{
+    font-size: 18px;
+    color:#333;
+}
+
+.profile header img{
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+    border-radius: 50%;
+}
+
+.profile header span{
+    font-size: 17px;
+    font-weight: 500;
+}
+.profile  img{
+    height: 250px;
+    width: 250px;
+    margin: 30px 15px;
+    border-radius: 0%;
+    display: block;
+}
+.myprofile a{
+    padding: 7px;
+}
+.pimage  img{
+    height: 200px;
+    width: 200px;
+    margin: 30px 15px;
+    border-radius: 0%;
+    display: block;
+}
 .chat-box .outgoing{
     display: flex;
 

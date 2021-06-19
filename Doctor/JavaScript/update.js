@@ -9,13 +9,13 @@ form.onsubmit = (e)=>{
 
 continueBtn.onclick = ()=>{
     let xhr = new XMLHttpRequest(); //creating XML request
-    xhr.open("POST", "PHP/signup.php", true);
+    xhr.open("POST", "PHP/update.php", true);
     xhr.onload = ()=>{
         if(xhr.readyState === XMLHttpRequest.DONE){
             if(xhr.status === 200){
                 let data = xhr.response;
-                if(data == "SignUp succeded"){
-                    location.href = "firstpage.php";
+                if(data == "Update succeded"){
+                    location.href = "myprofile.php";
                     
                 }
                 else{

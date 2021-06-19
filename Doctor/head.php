@@ -6,7 +6,7 @@
             </label>
             <input  type="checkbox" id="btn" class="mini">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="firstpage.php">Home</a></li>
                 <li>
                     <label for="btn-1"  class="show">Doctors +</label>
                     <a href="#">Doctors</a>

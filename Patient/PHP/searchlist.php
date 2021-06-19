@@ -5,10 +5,10 @@
     $searchTerm = mysqli_real_escape_string($conn, $_POST['searchTerm']);
 
     $output = "";
-    $sql = mysqli_query($conn, "SELECT * FROM patient WHERE (fname LIKE '%{$searchTerm}%'  OR lname LIKE '%{$searchTerm}%')");
+    $sql = mysqli_query($conn, "SELECT * FROM doctor WHERE (fname LIKE '%{$searchTerm}%'  OR lname LIKE '%{$searchTerm}%')");
 
     if(mysqli_num_rows($sql)>0){
-        include "data.php";
+        include "appointmentlistdata.php";
     }
     else{
         $output .= "No such user found";

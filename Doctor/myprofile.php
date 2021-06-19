@@ -19,7 +19,7 @@ include_once "header.php"
             <section class="form myprofile">
                 <?php
                 include_once "PHP/config.php";
-                $sql = mysqli_query($conn, "SELECT * FROM patient WHERE unique_id = {$_SESSION['unique_id']} ");
+                $sql = mysqli_query($conn, "SELECT * FROM doctor WHERE unique_id = {$_SESSION['unique_id']} ");
                 if (mysqli_num_rows($sql) > 0) {
                     $row = mysqli_fetch_assoc($sql);
                 }
@@ -31,7 +31,7 @@ include_once "header.php"
 
                         <div class="field input">
                             <label>First Name</label>
-                            <span ><?php echo $row['fname'] ?></span>
+                            <span class=""><?php echo $row['fname'] ?></span>
                         </div>
 
 
@@ -66,6 +66,7 @@ include_once "header.php"
                         <span><?php echo $row['gender'] ?></span>
 
                     </div>
+                    
 
                     <div class="pimage">
                             <img src="PHP/images/<?php echo $row['img'] ?>" alt="">

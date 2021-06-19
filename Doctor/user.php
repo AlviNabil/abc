@@ -25,7 +25,8 @@ include_once "header.php"
                     }
                     ?>
                     <div class="content">
-                        <img src="PHP/images/<?php echo $row['img']  ?>" alt="">
+                    <a href="firstpage.php" class="back-icon"><i class="fas fa-arrow-left"></i></a>
+                        <a href="myprofile.php"><img src="PHP/images/<?php echo $row['img']  ?>" alt=""></a>
                         <div class="details">
                             <span><?php echo $row['fname'] . " " . $row['lname'] ?></span>
                             <p><?php echo $row['status'] ?></p>

@@ -38,7 +38,30 @@ include_once "header.php"
                         <label>Email Adress</label>
                         <input type="text" name="email" placeholder="Enter Your Email" required>
                     </div>
+                    <div class="field input">
+                        <label>Address</label>
+                        <input type="text" name="address" placeholder="Enter Your Address" required>
+                    </div>
+                    <div class="field input">
+                        <label>Phone Number</label>
+                        <input type="text" name="phonenumber" placeholder="Enter Your Phone Number" required>
+                    </div>
+                    <div class="field input">
+                        <label>Age</label>
+                        <input type="text" name="age" placeholder="Enter Your Age" required>
+                    </div>
+                    <div class="field input">
+                        <label>Gender</label>
 
+                        <select name="gender" id="gender">
+
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="other">Other</option>
+                            
+                            <option value="" hidden disable selected>Select an option</option>
+                        </select>
+                    </div>
 
                     <div class="field input">
                         <label>Password</label>
